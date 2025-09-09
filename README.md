@@ -1,6 +1,167 @@
 # Malnadu Coffee Estate Website
 
-A modern, responsive website for Malnadu Coffee Estate built with React, Vite, and Tailwind CSS. This website showcases the beauty and features of a coffee sanctuary in the heart of Sakleshpur, Karnataka.
+A modern, responsive website for Malnadu Coffee Estate built with React, Vite, and Tailwind CSS. This website showcases the beauty and features of a coff# ☕ Malnadu Coffee Estate
+
+A modern, responsive website for Malnadu Coffee Estate in Sakleshpur, Karnataka. Built with React, Vite, and Tailwind CSS featuring smooth animations and optimized image loading.
+
+## 🌟 Features
+
+- **Modern Design**: Clean, professional design with earthy coffee theme
+- **Smooth Animations**: Framer Motion powered scroll animations and micro-interactions
+- **Optimized Images**: Progressive loading with fallbacks and skeleton states
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Interactive Components**: Gallery modal, testimonials, and inquiry forms
+- **SEO Optimized**: Meta tags and semantic HTML structure
+- **Performance Focused**: Lazy loading and optimized asset delivery
+
+## 🏗️ Built With
+
+- **Frontend Framework**: React 19
+- **Build Tool**: Vite 7.1.5
+- **Styling**: Tailwind CSS 3.4
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Routing**: React Router
+- **Development**: ESLint, PostCSS
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone https://github.com/SanketsMane/Coffie-estate.git
+cd Coffie-estate
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) to view it in the browser
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   ├── Hero.jsx        # Hero section with animations
+│   ├── Features.jsx    # Estate features grid
+│   ├── Gallery.jsx     # Image gallery with modal
+│   ├── NearbyAttractions.jsx
+│   ├── Transport.jsx   # Transportation info
+│   ├── Testimonials.jsx
+│   ├── Inquiry.jsx     # Contact form
+│   ├── Footer.jsx
+│   ├── Navbar.jsx
+│   └── OptimizedImage.jsx # Image component with loading states
+├── pages/              # Page components
+│   ├── Home.jsx
+│   ├── About.jsx
+│   └── Contact.jsx
+├── hooks/              # Custom React hooks
+│   └── useAnimation.js # Scroll animation hook
+├── App.jsx            # Main app component
+├── main.jsx          # App entry point
+└── index.css         # Global styles
+```
+
+## 🎨 Design Features
+
+### Color Palette
+- **Coffee Tones**: Rich browns and warm earth colors
+- **Nature Greens**: Forest and leaf inspired greens
+- **Earth Colors**: Natural browns and beiges
+
+### Animations
+- **Scroll Triggers**: Elements animate when entering viewport
+- **Staggered Effects**: Sequential animations for grid items
+- **Hover Interactions**: Micro-animations on user interaction
+- **Loading States**: Skeleton loaders during image loading
+- **Smooth Transitions**: Eased animations for professional feel
+
+### Components Overview
+- **Hero Section**: Full-screen background with animated text
+- **Features Grid**: Coffee estate features with icons and animations
+- **Gallery**: Interactive image gallery with modal view
+- **Nearby Attractions**: Local tourist spots with ratings
+- **Transport Access**: Connectivity information
+- **Testimonials**: Customer reviews with ratings
+- **Inquiry Form**: Contact form with validation
+
+## 📱 Responsive Design
+
+- **Mobile First**: Optimized for mobile devices
+- **Tablet Support**: Perfect layout for tablets
+- **Desktop Enhanced**: Rich desktop experience
+- **Touch Friendly**: Optimized touch interactions
+
+## ⚡ Performance Optimizations
+
+- **Lazy Loading**: Images load only when needed
+- **Code Splitting**: Optimized bundle sizes
+- **Image Optimization**: WebP support with fallbacks
+- **Animation Performance**: 60fps smooth animations
+- **Bundle Analysis**: Optimized dependencies
+
+## 🌐 SEO Features
+
+- **Meta Tags**: Comprehensive meta tag setup
+- **Semantic HTML**: Proper HTML5 structure
+- **Open Graph**: Social media sharing optimized
+- **Schema Markup**: Structured data for search engines
+
+## 📞 Contact Information
+
+- **Phone**: +91 90356 09555
+- **Email**: Contact through inquiry form
+- **Location**: Sakleshpur, Hassan District, Karnataka
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- **Unsplash**: High-quality stock images
+- **Lucide**: Beautiful icon library
+- **Framer Motion**: Smooth animations
+- **Tailwind CSS**: Utility-first CSS framework
+
+---
+
+**Made with ❤️ for Malnadu Coffee Estate**ctuary in the heart of Sakleshpur, Karnataka.
 
 ## 🌟 Features
 
