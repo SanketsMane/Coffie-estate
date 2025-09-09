@@ -27,15 +27,27 @@ export const useScrollAnimation = (threshold = 0.1) => {
 
 export const useImageLoad = () => {
   const [isLoaded, setIsLoaded] = useState(false);
-  const [hasError, setHasError] = useState(false);
+  const ref = useRef();
 
-  const handleLoad = () => setIsLoaded(true);
-  const handleError = () => setHasError(true);
+  useEffect(() => {
+    const imageElement = ref.current;
+    if (!imageElement) return;
 
-  return {
-    isLoaded,
-    hasError,
-    handleLoad,
-    handleError
-  };
+    const handleLoad = () => setIsLoaded(true);
+    const handleError = () => setIsLoaded(true); // Still show the image even if there's an error
+
+    if (imageElement.complete) {
+      setIsLoaded(true);
+    } else {
+      imageElement.addEventListener('load', handleLoad);
+      imageElement.addEventListener('error', handleError);
+    }
+
+    return () => {
+      imageElement.removeEventListener('load', handleLoad);
+      imageElement.removeEventListener('error', handleError);
+    };
+  }, []);
+
+  return [isLoaded, ref];
 };

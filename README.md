@@ -28,7 +28,7 @@ A modern, responsive website for Malnadu Coffee Estate in Sakleshpur, Karnataka.
 
 ### Prerequisites
 
-- Node.js (v18 or higher)
+- Node.js (v20 or higher)
 - npm or yarn
 
 ### Installation
@@ -62,6 +62,46 @@ npm run build
 ```bash
 npm run preview
 ```
+
+## 🚀 Deployment
+
+### GitHub Pages (Automatic)
+
+The project is configured for automatic deployment to GitHub Pages:
+
+1. **Enable GitHub Pages**:
+   - Go to repository Settings → Pages
+   - Select "GitHub Actions" as the source
+   - The site will be automatically deployed on every push to `main`
+
+2. **Live URL**: `https://sanketsmane.github.io/Coffie-estate/`
+
+3. **Deployment Status**: Check the Actions tab in your repository
+
+### Manual Deployment
+
+```bash
+# Build and deploy to gh-pages branch
+npm run deploy
+
+# Or build only
+npm run build
+```
+
+### Environment Variables
+
+Copy `.env.example` to `.env.local` and configure:
+
+```bash
+cp .env.example .env.local
+```
+
+## 🔧 Performance Features
+
+- **Code Splitting**: Vendor and animation libraries are separated
+- **Image Optimization**: Progressive loading with fallbacks
+- **Bundle Analysis**: Optimized chunk sizes
+- **Production Build**: Minified and optimized for deployment
 
 ## 📁 Project Structure
 
