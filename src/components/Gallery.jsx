@@ -11,10 +11,10 @@ const Gallery = () => {
 
   const images = [
     {
-      src: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      src: "https://images.unsplash.com/photo-1501436513145-30f24e19fcc4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       alt: "Coffee plantation overview",
       title: "Coffee Plantation",
-      fallback: "https://images.unsplash.com/photo-1501436513145-30f24e19fcc4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      fallback: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
     {
       src: "https://images.unsplash.com/photo-1574932194515-47997e6bbf75?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
