@@ -1,6 +1,6 @@
 import { ArrowDown, Phone, MapPin } from 'lucide-react';
 import { motion } from 'framer-motion';
-import OptimizedImage from './OptimizedImage';
+import VideoBackground from './VideoBackground';
 
 const Hero = () => {
   const containerVariants = {
@@ -28,18 +28,22 @@ const Hero = () => {
 
   const backgroundImage = "https://images.unsplash.com/photo-1501436513145-30f24e19fcc4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2061&q=80";
   const fallbackImage = "https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2061&q=80";
+  // For now, using a placeholder video URL - replace with your hosted video
+  const heroVideo = "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4";
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image with Overlay */}
+      {/* Video Background */}
       <div className="absolute inset-0">
-        <OptimizedImage
-          src={backgroundImage}
-          fallbackSrc={fallbackImage}
-          alt="Malnadu Coffee Estate"
-          className="w-full h-full object-cover"
+        <VideoBackground
+          src={heroVideo}
+          fallbackImage={fallbackImage}
+          className="w-full h-full"
+          showControls={true}
+          autoPlay={true}
+          muted={true}
+          loop={true}
         />
-        <div className="hero-overlay absolute inset-0"></div>
       </div>
 
       {/* Content */}
