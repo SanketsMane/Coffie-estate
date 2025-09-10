@@ -11,7 +11,6 @@ const Navbar = () => {
     { name: 'About', href: '/about' },
     { name: 'Estate', href: '/estate' },
     { name: 'Activities', href: '/activities' },
-    { name: 'Booking', href: '/booking' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -25,7 +24,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2">
             <Coffee className="h-8 w-8 text-coffee-600" />
             <span className="font-playfair text-2xl font-bold gradient-text">
-              Malnadu
+              Aura Properties
             </span>
           </Link>
 

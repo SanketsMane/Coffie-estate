@@ -128,7 +128,7 @@ const Booking = () => {
             variants={itemVariants}
             className="text-lg sm:text-xl md:text-2xl mb-8 text-earth-100 font-light leading-relaxed"
           >
-            Experience the magic of Malnadu Coffee Estate
+            Experience the magic of Aura Properties Coffee Estate
           </motion.p>
         </motion.div>
       </section>
@@ -418,7 +418,7 @@ const Booking = () => {
                 </div>
                 <div className="flex items-start">
                   <MapPin className="h-5 w-5 mr-3 mt-1 text-coffee-400" />
-                  <span>Malnadu Coffee Estate<br />Sakleshpur, Hassan District<br />Karnataka, India</span>
+                  <span>Aura Properties Coffee Estate<br />Sakleshpur, Hassan District<br />Karnataka, India</span>
                 </div>
               </div>
             </motion.div>

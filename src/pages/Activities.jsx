@@ -129,7 +129,7 @@ const Activities = () => {
             variants={itemVariants}
             className="text-lg sm:text-xl md:text-2xl mb-8 text-earth-100 font-light leading-relaxed"
           >
-            Immerse yourself in nature's beauty with our curated experiences
+            Immerse yourself in nature's beauty at Aura Properties
           </motion.p>
         </motion.div>
       </section>
