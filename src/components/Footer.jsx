@@ -92,7 +92,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
           <p className="text-slate-400">
-            © 2024 Aura Properties. All rights reserved. | Designed with ❤️ for coffee lovers
+            © 2024 Aura Properties. All rights reserved. | Developed by Formonex Solutions PVT LTD
           </p>
         </div>
       </div>
