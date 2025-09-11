@@ -58,7 +58,7 @@ const Hero = () => {
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight"
           style={{ 
             fontFamily: "'Poppins', sans-serif", 
-            fontWeight: '300',
+            fontWeight: '700',
             letterSpacing: '-0.01em'
           }}
         >
@@ -68,7 +68,7 @@ const Hero = () => {
             className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-coffee-300"
             style={{ 
               fontFamily: "'Poppins', sans-serif", 
-              fontWeight: '400'
+              fontWeight: '600'
             }}
           >
             Malnadu Coffee Estate
