@@ -78,7 +78,7 @@ const Features = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold gradient-text mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Estate Features
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -113,7 +113,7 @@ const Features = () => {
                 </motion.div>
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-800 mb-4 font-playfair">
+              <h3 className="text-xl font-semibold text-gray-800 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 {feature.title}
               </h3>
               
@@ -133,7 +133,7 @@ const Features = () => {
           className="text-center mt-16"
         >
           <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
-            <h3 className="font-playfair text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
               Ready to Experience Paradise?
             </h3>
             <p className="text-gray-600 mb-6 text-lg">

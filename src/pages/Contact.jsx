@@ -80,7 +80,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-coffee-600 to-nature-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
+          <h1 className=" text-4xl md:text-6xl font-bold mb-6">
             Contact Us
           </h1>
           <p className="text-xl md:text-2xl text-coffee-100 max-w-4xl mx-auto leading-relaxed">
@@ -102,7 +102,7 @@ const Contact = () => {
                 <div className="bg-gradient-to-r from-coffee-500 to-nature-500 text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                   {info.icon}
                 </div>
-                <h3 className="font-playfair text-xl font-bold text-gray-800 mb-4">
+                <h3 className=" text-xl font-bold text-gray-800 mb-4">
                   {info.title}
                 </h3>
                 <div className="space-y-2 mb-6">
@@ -132,7 +132,7 @@ const Contact = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="bg-gradient-to-br from-coffee-50 to-nature-50 rounded-2xl p-8">
-              <h2 className="font-playfair text-3xl font-bold gradient-text mb-6">
+              <h2 className=" text-3xl font-bold gradient-text mb-6">
                 Send us a Message
               </h2>
               <p className="text-gray-600 mb-8">
@@ -257,7 +257,7 @@ const Contact = () => {
 
               {/* Quick Contact */}
               <div className="bg-gradient-to-br from-coffee-600 to-nature-600 text-white rounded-2xl p-8">
-                <h3 className="font-playfair text-2xl font-bold mb-6">
+                <h3 className=" text-2xl font-bold mb-6">
                   Need Immediate Assistance?
                 </h3>
                 <p className="text-coffee-100 mb-6">
@@ -289,7 +289,7 @@ const Contact = () => {
       <section className="py-20 bg-gradient-to-br from-earth-50 to-coffee-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold gradient-text mb-6">
+            <h2 className=" text-3xl md:text-4xl font-bold gradient-text mb-6">
               Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -303,7 +303,7 @@ const Contact = () => {
                 key={index}
                 className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300"
               >
-                <h3 className="font-playfair text-xl font-bold text-gray-800 mb-4 flex items-start space-x-3">
+                <h3 className=" text-xl font-bold text-gray-800 mb-4 flex items-start space-x-3">
                   <MessageCircle className="h-6 w-6 text-coffee-600 mt-1 flex-shrink-0" />
                   <span>{faq.question}</span>
                 </h3>

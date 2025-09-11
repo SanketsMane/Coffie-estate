@@ -85,7 +85,7 @@ const Testimonials = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold gradient-text mb-6">
+          <h2 className=" text-4xl md:text-5xl font-bold gradient-text mb-6">
             What Our Visitors Say
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -196,7 +196,7 @@ const Testimonials = () => {
             transition={{ duration: 0.3 }}
           >
             <motion.h3 
-              className="font-playfair text-2xl md:text-3xl font-bold mb-4"
+              className=" text-2xl md:text-3xl font-bold mb-4"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}

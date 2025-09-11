@@ -120,7 +120,7 @@ const Booking = () => {
         >
           <motion.h1 
             variants={itemVariants}
-            className="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
+            className=" text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
           >
             Book Your Stay
           </motion.h1>
@@ -145,7 +145,7 @@ const Booking = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="font-playfair text-3xl md:text-4xl font-bold text-earth-800 mb-4"
+              className=" text-3xl md:text-4xl font-bold text-earth-800 mb-4"
             >
               Choose Your Experience
             </motion.h2>
@@ -222,7 +222,7 @@ const Booking = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="font-playfair text-3xl md:text-4xl font-bold text-earth-800 mb-4"
+              className=" text-3xl md:text-4xl font-bold text-earth-800 mb-4"
             >
               Make Your Reservation
             </motion.h2>
@@ -406,7 +406,7 @@ const Booking = () => {
             viewport={{ once: true }}
           >
             <motion.div variants={itemVariants}>
-              <h3 className="font-playfair text-2xl font-bold mb-6">Contact Details</h3>
+              <h3 className=" text-2xl font-bold mb-6">Contact Details</h3>
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 mr-3 text-coffee-400" />
@@ -424,7 +424,7 @@ const Booking = () => {
             </motion.div>
 
             <motion.div variants={itemVariants}>
-              <h3 className="font-playfair text-2xl font-bold mb-6">What's Included</h3>
+              <h3 className=" text-2xl font-bold mb-6">What's Included</h3>
               <div className="grid grid-cols-2 gap-4">
                 {amenities.map((amenity, index) => (
                   <div key={index} className="flex items-center">

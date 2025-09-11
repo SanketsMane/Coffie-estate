@@ -121,7 +121,7 @@ const Activities = () => {
         >
           <motion.h1 
             variants={itemVariants}
-            className="font-playfair text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
+            className=" text-4xl sm:text-5xl md:text-6xl font-bold mb-6 leading-tight"
           >
             Activities & Experiences
           </motion.h1>
@@ -146,7 +146,7 @@ const Activities = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="font-playfair text-3xl md:text-4xl font-bold text-earth-800 mb-4"
+              className=" text-3xl md:text-4xl font-bold text-earth-800 mb-4"
             >
               What You Can Do
             </motion.h2>
@@ -226,7 +226,7 @@ const Activities = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="font-playfair text-3xl md:text-4xl font-bold text-earth-800 mb-4"
+              className=" text-3xl md:text-4xl font-bold text-earth-800 mb-4"
             >
               Nearby Attractions
             </motion.h2>
@@ -288,7 +288,7 @@ const Activities = () => {
           >
             <motion.h2 
               variants={itemVariants}
-              className="font-playfair text-3xl md:text-4xl font-bold mb-6"
+              className=" text-3xl md:text-4xl font-bold mb-6"
             >
               Ready for Your Adventure?
             </motion.h2>

@@ -29,7 +29,7 @@ const Inquiry = () => {
     <section id="inquiry" className="py-20 bg-gradient-to-br from-earth-100 to-coffee-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold gradient-text mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Get In Touch
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -42,7 +42,7 @@ const Inquiry = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="font-playfair text-2xl font-bold text-gray-800 mb-6">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 Contact Information
               </h3>
               
@@ -91,7 +91,7 @@ const Inquiry = () => {
 
             {/* Google Maps */}
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="font-playfair text-2xl font-bold text-gray-800 mb-6">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 Find Us on Map
               </h3>
               <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
@@ -115,7 +115,7 @@ const Inquiry = () => {
 
           {/* Contact Form */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="font-playfair text-2xl font-bold text-gray-800 mb-6">
+            <h3 className="text-2xl font-bold text-gray-800 mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
               Send us a Message
             </h3>
             

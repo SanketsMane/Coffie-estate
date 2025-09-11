@@ -70,7 +70,7 @@ const Transport = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold gradient-text mb-6">
+          <h2 className=" text-4xl md:text-5xl font-bold gradient-text mb-6">
             Transport Access
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -118,7 +118,7 @@ const Transport = () => {
                 </motion.div>
 
                 <motion.h3 
-                  className="font-playfair text-2xl font-bold text-gray-800 mb-3"
+                  className=" text-2xl font-bold text-gray-800 mb-3"
                   initial={{ opacity: 0, x: -20 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.1 + 0.3 }}
@@ -193,7 +193,7 @@ const Transport = () => {
             transition={{ duration: 0.3 }}
           >
             <motion.h3 
-              className="font-playfair text-2xl font-bold text-gray-800 mb-4"
+              className=" text-2xl font-bold text-gray-800 mb-4"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
@@ -243,7 +243,7 @@ const Transport = () => {
             transition={{ duration: 0.3 }}
           >
             <motion.h3 
-              className="font-playfair text-2xl font-bold mb-4"
+              className=" text-2xl font-bold mb-4"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}

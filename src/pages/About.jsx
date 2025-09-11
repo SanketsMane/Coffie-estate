@@ -56,7 +56,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-coffee-600 to-nature-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-playfair text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
             About Aura Properties
           </h1>
           <p className="text-xl md:text-2xl text-coffee-100 max-w-4xl mx-auto leading-relaxed">
@@ -71,7 +71,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="font-playfair text-3xl md:text-4xl font-bold gradient-text mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold gradient-text mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 Our Story
               </h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
@@ -110,7 +110,7 @@ const About = () => {
       <section className="py-20 bg-gradient-to-br from-earth-50 to-coffee-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold gradient-text mb-6">
+            <h2 className=" text-3xl md:text-4xl font-bold gradient-text mb-6">
               Our Values
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -127,7 +127,7 @@ const About = () => {
                 <div className="bg-gradient-to-r from-coffee-500 to-nature-500 text-white p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                   {value.icon}
                 </div>
-                <h3 className="font-playfair text-xl font-bold text-gray-800 mb-4">
+                <h3 className=" text-xl font-bold text-gray-800 mb-4">
                   {value.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -143,7 +143,7 @@ const About = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold gradient-text mb-6">
+            <h2 className=" text-3xl md:text-4xl font-bold gradient-text mb-6">
               Estate in Detail
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -155,7 +155,7 @@ const About = () => {
             <div>
               <div className="flex items-center mb-6">
                 <TreePine className="h-12 w-12 text-nature-600 mr-4" />
-                <h3 className="font-playfair text-2xl font-bold text-gray-800">
+                <h3 className=" text-2xl font-bold text-gray-800">
                   Coffee Plantation
                 </h3>
               </div>
@@ -191,7 +191,7 @@ const About = () => {
             <div className="order-1 md:order-2">
               <div className="flex items-center mb-6">
                 <Coffee className="h-12 w-12 text-coffee-600 mr-4" />
-                <h3 className="font-playfair text-2xl font-bold text-gray-800">
+                <h3 className=" text-2xl font-bold text-gray-800">
                   Infrastructure & Buildings
                 </h3>
               </div>
@@ -215,7 +215,7 @@ const About = () => {
       <section className="py-20 bg-gradient-to-br from-coffee-50 to-nature-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold gradient-text mb-6">
+            <h2 className=" text-3xl md:text-4xl font-bold gradient-text mb-6">
               Why Choose Aura Properties?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -230,7 +230,7 @@ const About = () => {
                 key={index}
                 className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300"
               >
-                <h3 className="font-playfair text-xl font-bold text-gray-800 mb-4">
+                <h3 className=" text-xl font-bold text-gray-800 mb-4">
                   {reason.title}
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -245,7 +245,7 @@ const About = () => {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-coffee-600 to-nature-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-playfair text-3xl md:text-4xl font-bold mb-6">
+          <h2 className=" text-3xl md:text-4xl font-bold mb-6">
             Ready to Be Part of Our Story?
           </h2>
           <p className="text-xl text-coffee-100 mb-8 leading-relaxed">

@@ -55,18 +55,31 @@ const Hero = () => {
       >
         <motion.h1 
           variants={itemVariants}
-          className="font-playfair text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight"
+          style={{ 
+            fontFamily: "'Poppins', sans-serif", 
+            fontWeight: '300',
+            letterSpacing: '-0.01em'
+          }}
         >
           AURA PROPERTIES
           <motion.span 
             variants={itemVariants}
             className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-coffee-300"
+            style={{ 
+              fontFamily: "'Poppins', sans-serif", 
+              fontWeight: '400'
+            }}
           >
             Malnadu Coffee Estate
           </motion.span>
           <motion.span 
             variants={itemVariants}
             className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-earth-200"
+            style={{ 
+              fontFamily: "'Poppins', sans-serif", 
+              fontWeight: '200'
+            }}
           >
             A Coffee Sanctuary in Sakleshpur
           </motion.span>

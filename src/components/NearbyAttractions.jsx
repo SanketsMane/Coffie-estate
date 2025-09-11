@@ -83,7 +83,7 @@ const NearbyAttractions = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold gradient-text mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
             Nearby Attractions
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -151,7 +151,7 @@ const NearbyAttractions = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 + 0.5 }}
               >
-                <h3 className="font-playfair text-2xl font-bold text-gray-800 mb-3">
+                <h3 className=" text-2xl font-bold text-gray-800 mb-3">
                   {attraction.name}
                 </h3>
                 <p className="text-gray-600 mb-4 leading-relaxed">
@@ -213,7 +213,7 @@ const NearbyAttractions = () => {
             whileHover={{ scale: 1.02, y: -5 }}
             transition={{ duration: 0.3 }}
           >
-            <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-4">
+            <h3 className=" text-2xl md:text-3xl font-bold mb-4">
               Explore the Best of Sakleshpur
             </h3>
             <p className="text-coffee-100 mb-6 text-lg">
