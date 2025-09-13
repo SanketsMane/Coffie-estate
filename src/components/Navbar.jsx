@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, MessageCircle } from 'lucide-react';
 import auraLogo from '../assets/aura-logo.png';
 
 const Navbar = () => {
@@ -10,8 +10,6 @@ const Navbar = () => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Estate', href: '/estate' },
-    { name: 'Activities', href: '/activities' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -20,13 +18,13 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full z-50 bg-white shadow-md border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-18">{/* Increased from h-14 to h-18 */}
+        <div className="flex justify-between items-center h-20">{/* Increased height for bigger logo */}
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img 
               src={auraLogo} 
               alt="Aura Properties Logo" 
-              className="h-16 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
           </Link>
 
@@ -46,12 +44,30 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="tel:+919035609555"
-                className="bg-gradient-to-r from-green-600 to-green-500 text-white px-5 py-2 rounded-full text-sm font-medium hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-300"
-              >
-                Call Now
-              </a>
+              
+              {/* Contact Options */}
+              <div className="flex items-center space-x-3">
+                {/* Mobile Number in Box */}
+                <div className="bg-green-50 border border-green-200 px-3 py-2 rounded-lg">
+                  <a
+                    href="tel:+919035609555"
+                    className="text-green-700 font-medium text-sm hover:text-green-800 transition-colors"
+                  >
+                    +91 90356 09555
+                  </a>
+                </div>
+                
+                {/* WhatsApp Button */}
+                <a
+                  href="https://wa.me/919035609555?text=Hi, I'm interested in Aura Properties"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-green-500 hover:bg-green-600 text-white px-3 py-2 rounded-lg flex items-center space-x-2 transition-all duration-300 transform hover:-translate-y-0.5"
+                >
+                  <MessageCircle className="h-4 w-4" />
+                  <span className="text-sm font-medium">WhatsApp</span>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -87,9 +103,17 @@ const Navbar = () => {
             ))}
             <a
               href="tel:+919035609555"
-              className="block w-full text-center bg-gradient-to-r from-green-600 to-green-500 text-white px-6 py-3 rounded-full font-medium mt-4"
+              className="block w-full text-center bg-green-600 text-white px-6 py-3 rounded-lg font-medium mt-4"
             >
-              Call Now
+              📞 +91 90356 09555
+            </a>
+            <a
+              href="https://wa.me/919035609555?text=Hi, I'm interested in Aura Properties"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center bg-green-500 text-white px-6 py-3 rounded-lg font-medium mt-2"
+            >
+              💬 WhatsApp
             </a>
           </div>
         </div>

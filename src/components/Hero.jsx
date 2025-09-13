@@ -55,33 +55,33 @@ const Hero = () => {
       >
         <motion.h1 
           variants={itemVariants}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight"
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl mb-6 leading-tight"
           style={{ 
             fontFamily: "'Poppins', sans-serif", 
-            fontWeight: '700',
+            fontWeight: '800',
             letterSpacing: '-0.01em'
           }}
         >
           AURA PROPERTIES
           <motion.span 
             variants={itemVariants}
-            className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-coffee-300"
+            className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-green-300"
             style={{ 
               fontFamily: "'Poppins', sans-serif", 
               fontWeight: '600'
             }}
           >
-            Malnadu Coffee Estate
+            Your Gateway to Opportunity
           </motion.span>
           <motion.span 
             variants={itemVariants}
             className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-earth-200"
             style={{ 
               fontFamily: "'Poppins', sans-serif", 
-              fontWeight: '200'
+              fontWeight: '300'
             }}
           >
-            A Coffee Sanctuary in Sakleshpur
+            Nature • Business • Opportunity
           </motion.span>
         </motion.h1>
         
@@ -89,7 +89,7 @@ const Hero = () => {
           variants={itemVariants}
           className="text-lg sm:text-xl md:text-2xl mb-8 text-earth-100 font-light leading-relaxed"
         >
-          Imagine waking up to the rich aroma of Malnad's finest coffee...
+          Welcome to 22.20 acres of endless possibilities on National Highway 75!
         </motion.p>
 
         <motion.div 
@@ -97,22 +97,24 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
         >
           <motion.a 
-            href="#features" 
-            className="bg-gradient-to-r from-coffee-600 to-coffee-500 text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center space-x-2"
+            href="#properties" 
+            className="bg-gradient-to-r from-green-600 to-green-500 text-white font-semibold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 inline-flex items-center space-x-2"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span>Explore Now</span>
+            <span>Explore Properties</span>
             <ArrowDown className="h-5 w-5" />
           </motion.a>
           <motion.a 
-            href="tel:+919035609555" 
-            className="border-2 border-white text-white font-semibold py-4 px-8 rounded-full hover:bg-white hover:text-coffee-600 transition-all duration-300 inline-flex items-center space-x-2"
+            href="https://wa.me/919035609555?text=Hi, I'm interested in Aura Properties" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-white text-white font-semibold py-4 px-8 rounded-full hover:bg-white hover:text-green-600 transition-all duration-300 inline-flex items-center space-x-2"
             whileHover={{ scale: 1.05, y: -2 }}
             whileTap={{ scale: 0.95 }}
           >
             <Phone className="h-5 w-5" />
-            <span>Contact Us</span>
+            <span>WhatsApp Us</span>
           </motion.a>
         </motion.div>
 
@@ -125,21 +127,21 @@ const Hero = () => {
             whileHover={{ scale: 1.05 }}
           >
             <MapPin className="h-4 w-4" />
-            <span>11.30 Acres of Pure Bliss</span>
+            <span>22.20 Acres on NH-75</span>
           </motion.div>
           <div className="hidden sm:block text-earth-400">•</div>
           <motion.div 
             className="flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
           >
-            <span>7 Acres Coffee Plantation</span>
+            <span>750 ft Highway Frontage</span>
           </motion.div>
           <div className="hidden sm:block text-earth-400">•</div>
           <motion.div 
             className="flex items-center space-x-2"
             whileHover={{ scale: 1.05 }}
           >
-            <span>Organic Farming Zone</span>
+            <span>Profitable Coffee Plantation</span>
           </motion.div>
         </motion.div>
       </motion.div>

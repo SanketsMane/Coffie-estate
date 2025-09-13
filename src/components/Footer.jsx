@@ -17,9 +17,14 @@ const Footer = () => {
               />
             </div>
             <p className="text-slate-300 mb-6 leading-relaxed">
-              A Coffee Sanctuary in the Heart of Sakleshpur! Experience the perfect blend of nature, 
-              tranquility, and the finest coffee plantation lifestyle.
+              Your gateway to endless opportunities on National Highway 75! 
+              Experience prime real estate with profitable coffee plantation and strategic location.
             </p>
+            <div className="mb-4">
+              <a href="https://www.auraproperties.in" className="text-green-400 hover:text-green-300 font-semibold transition-colors duration-300">
+                www.auraproperties.in
+              </a>
+            </div>
             <div className="flex space-x-4">
               <a href="#" className="text-slate-400 hover:text-white transition-colors duration-300">
                 <Facebook className="h-5 w-5" />
@@ -80,10 +85,19 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-slate-400" />
                 <a 
-                  href="mailto:info@auraproperties.com" 
+                  href="mailto:info@auraproperties.in" 
                   className="text-slate-300 hover:text-white transition-colors duration-300"
                 >
-                  info@auraproperties.com
+                  info@auraproperties.in
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <span className="text-slate-400">🌐</span>
+                <a 
+                  href="https://www.auraproperties.in" 
+                  className="text-slate-300 hover:text-white transition-colors duration-300"
+                >
+                  www.auraproperties.in
                 </a>
               </div>
             </div>
@@ -92,7 +106,7 @@ const Footer = () => {
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center">
           <p className="text-slate-400">
-            © 2024 Aura Properties. All rights reserved. | Developed by Formonex Solutions PVT LTD
+            © 2024 Aura Properties | www.auraproperties.in | All rights reserved.
           </p>
         </div>
       </div>

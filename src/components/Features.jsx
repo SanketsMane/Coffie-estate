@@ -1,4 +1,4 @@
-import { CheckCircle, Home, Droplets, TreePine, Building, Zap } from 'lucide-react';
+import { CheckCircle, MapPin, Droplets, TreePine, Building, Zap, Star, Route, Mountain } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useScrollAnimation } from '../hooks/useAnimation';
 
@@ -7,41 +7,54 @@ const Features = () => {
   const [gridRef, gridVisible] = useScrollAnimation(0.1);
   const [ctaRef, ctaVisible] = useScrollAnimation(0.2);
 
-  const features = [
+  const properties = [
     {
-      icon: <TreePine className="h-8 w-8" />,
-      title: "11.30 Acres of Pure Bliss",
-      description: "Expansive estate offering endless possibilities for development and peaceful living"
+      id: 1,
+      title: "22.20 G. Acres - Premium Estate",
+      description: "Your gateway to endless opportunities with profitable coffee plantation income from Day One!",
+      size: "22.20 Guntha Acres",
+      frontage: "750 ft National Highway Frontage",
+      features: [
+        "Profitable Coffee Plantation - Income from Day One!",
+        "750-foot frontage on National Highway 75",
+        "Perennial sweet-water canal flowing through",
+        "Perfect for educational institution, resort, restaurant, hotel, homestays, petrol bunk",
+        "15 minutes from Sakleshpur, 30 minutes from Chavlgere Toll",
+        "3-hour drive from Bengaluru"
+      ],
+      attractions: [
+        "Manjarabad Star Fort - 7 km",
+        "Mokannana Falls - 22 km",
+        "Betta Bhairaveshwara Temple - 41 km",
+        "Bisile View Point - 52 km",
+        "Kukke Subramanya & Dharmasthala - Short drive"
+      ],
+      price: "Contact for Details",
+      highlight: "Prime Highway Location"
     },
     {
-      icon: <TreePine className="h-8 w-8" />,
-      title: "7 Acres of Coffee Plantation",
-      description: "Premium coffee cultivation with organic farming practices and sustainable methods"
-    },
-    {
-      icon: <CheckCircle className="h-8 w-8" />,
-      title: "1.20 Acre Land Conversion Done",
-      description: "Legal documentation complete with converted land ready for construction"
-    },
-    {
-      icon: <Droplets className="h-8 w-8" />,
-      title: "Water Storage Ponds",
-      description: "One big and one small pond ensuring year-round water availability"
-    },
-    {
-      icon: <Building className="h-8 w-8" />,
-      title: "Ready Buildings",
-      description: "Two residential buildings and one hotel building ready for immediate use"
-    },
-    {
-      icon: <Home className="h-8 w-8" />,
-      title: "Organic Farming Zone",
-      description: "Dedicated area for sustainable organic farming and kitchen gardening"
-    },
-    {
-      icon: <Zap className="h-8 w-8" />,
-      title: "Essential Utilities",
-      description: "Water and electricity points strategically placed throughout the property"
+      id: 2,
+      title: "5 Acres - Investment Paradise",
+      description: "Same exceptional location and connectivity with all the benefits of the premium estate.",
+      size: "5 Acres",
+      frontage: "Highway Access",
+      features: [
+        "Profitable Coffee Plantation potential",
+        "Access to National Highway 75",
+        "Sweet-water canal access",
+        "Multiple business opportunities",
+        "15 minutes from Sakleshpur",
+        "3-hour drive from Bengaluru"
+      ],
+      attractions: [
+        "Manjarabad Star Fort - 7 km",
+        "Mokannana Falls - 22 km",
+        "Betta Bhairaveshwara Temple - 41 km",
+        "Bisile View Point - 52 km",
+        "Kukke Subramanya & Dharmasthala - Short drive"
+      ],
+      price: "Contact for Details",
+      highlight: "Perfect Investment Size"
     }
   ];
 
@@ -50,7 +63,7 @@ const Features = () => {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
+        staggerChildren: 0.3,
         delayChildren: 0.2
       }
     }
@@ -62,14 +75,14 @@ const Features = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.6,
+        duration: 0.8,
         ease: "easeOut"
       }
     }
   };
 
   return (
-    <section id="features" className="py-20 bg-gradient-to-br from-earth-50 to-coffee-50">
+    <section id="properties" className="py-20 bg-gradient-to-br from-earth-50 to-green-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
           ref={titleRef}
@@ -79,11 +92,11 @@ const Features = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold gradient-text mb-6" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            Estate Features
+            The Divine Valley Properties
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Discover the exceptional amenities and features that make Malnadu Coffee Estate 
-            a perfect sanctuary for peaceful living and sustainable agriculture
+            Welcome to Aura Properties – where nature, business, and opportunity meet. 
+            Nestled in lush greenery with endless possibilities on National Highway 75.
           </p>
         </motion.div>
 
@@ -92,34 +105,107 @@ const Features = () => {
           variants={containerVariants}
           initial="hidden"
           animate={gridVisible ? "visible" : "hidden"}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-12"
         >
-          {features.map((feature, index) => (
+          {properties.map((property, index) => (
             <motion.div 
-              key={index}
+              key={property.id}
               variants={itemVariants}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transform hover:-translate-y-2 transition-all duration-300 group"
+              className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transform hover:-translate-y-3 transition-all duration-300 group relative overflow-hidden"
               whileHover={{ 
-                y: -8,
-                transition: { duration: 0.2 }
+                y: -12,
+                transition: { duration: 0.3 }
               }}
             >
-              <div className="flex items-center mb-6">
-                <motion.div 
-                  className="bg-gradient-to-r from-coffee-500 to-nature-500 text-white p-3 rounded-full group-hover:scale-110 transition-transform duration-300"
-                  whileHover={{ scale: 1.1, rotate: 5 }}
-                >
-                  {feature.icon}
-                </motion.div>
+              <div className="absolute top-0 right-0 bg-gradient-to-l from-green-500 to-green-400 text-white px-6 py-2 rounded-bl-2xl">
+                <span className="text-sm font-semibold">{property.highlight}</span>
               </div>
               
-              <h3 className="text-xl font-semibold text-gray-800 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-                {feature.title}
-              </h3>
-              
-              <p className="text-gray-600 leading-relaxed">
-                {feature.description}
-              </p>
+              <div className="mt-4">
+                <h3 className="text-2xl font-bold text-gray-800 mb-3" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                  {property.title}
+                </h3>
+                
+                <p className="text-gray-600 leading-relaxed mb-6">
+                  {property.description}
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                  <div className="bg-green-50 rounded-lg p-4">
+                    <div className="flex items-center mb-2">
+                      <Mountain className="h-5 w-5 text-green-600 mr-2" />
+                      <span className="font-semibold text-green-800">Size</span>
+                    </div>
+                    <p className="text-green-700">{property.size}</p>
+                  </div>
+                  
+                  <div className="bg-blue-50 rounded-lg p-4">
+                    <div className="flex items-center mb-2">
+                      <Route className="h-5 w-5 text-blue-600 mr-2" />
+                      <span className="font-semibold text-blue-800">Highway Access</span>
+                    </div>
+                    <p className="text-blue-700">{property.frontage}</p>
+                  </div>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                    <CheckCircle className="h-5 w-5 text-green-600 mr-2" />
+                    Key Features
+                  </h4>
+                  <ul className="space-y-2">
+                    {property.features.map((feature, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <Star className="h-4 w-4 text-yellow-500 mr-2 mt-1 flex-shrink-0" />
+                        <span className="text-gray-600 text-sm">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-gray-800 mb-3 flex items-center">
+                    <MapPin className="h-5 w-5 text-red-600 mr-2" />
+                    Nearby Attractions
+                  </h4>
+                  <ul className="space-y-2">
+                    {property.attractions.map((attraction, idx) => (
+                      <li key={idx} className="flex items-start">
+                        <MapPin className="h-3 w-3 text-red-500 mr-2 mt-1.5 flex-shrink-0" />
+                        <span className="text-gray-600 text-sm">{attraction}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="border-t pt-6">
+                  <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div>
+                      <p className="text-lg font-bold text-green-600">{property.price}</p>
+                    </div>
+                    <div className="flex gap-3">
+                      <motion.a 
+                        href="https://wa.me/919035609555?text=Hi, I'm interested in the {property.title} property"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-4 rounded-lg transition-all duration-300 text-sm"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        WhatsApp
+                      </motion.a>
+                      <motion.a 
+                        href="tel:+919035609555"
+                        className="border-2 border-green-500 text-green-600 font-semibold py-2 px-4 rounded-lg hover:bg-green-500 hover:text-white transition-all duration-300 text-sm"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        Call Now
+                      </motion.a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </motion.div>
           ))}
         </motion.div>
@@ -132,29 +218,31 @@ const Features = () => {
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }}
           className="text-center mt-16"
         >
-          <div className="bg-white rounded-2xl p-8 shadow-lg max-w-4xl mx-auto">
-            <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
-              Ready to Experience Paradise?
+          <div className="bg-gradient-to-r from-green-600 to-green-500 rounded-3xl p-8 shadow-xl max-w-4xl mx-auto text-white">
+            <h3 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: "'Poppins', sans-serif" }}>
+              Aura Properties – Your Gateway to Opportunity!
             </h3>
-            <p className="text-gray-600 mb-6 text-lg">
-              Contact us today to schedule a visit and explore all the incredible features this estate has to offer
+            <p className="text-green-100 mb-6 text-lg">
+              This isn't just land. It's a canvas for your vision – a hub of possibilities waiting for your touch.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <motion.a 
                 href="tel:+919035609555"
-                className="bg-gradient-to-r from-coffee-600 to-coffee-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
+                className="bg-white text-green-600 font-semibold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Call +91 90356 09555
+                📞 Call +91 90356 09555
               </motion.a>
               <motion.a 
-                href="#inquiry"
-                className="border-2 border-coffee-600 text-coffee-600 font-semibold py-3 px-8 rounded-full hover:bg-coffee-600 hover:text-white transition-all duration-300"
+                href="https://wa.me/919035609555?text=Hi, I want to know more about Aura Properties"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-white text-white font-semibold py-3 px-8 rounded-full hover:bg-white hover:text-green-600 transition-all duration-300"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Send Inquiry
+                💬 WhatsApp Us
               </motion.a>
             </div>
           </div>
