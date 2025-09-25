@@ -29,8 +29,8 @@ const Property5Page = () => {
 
   const propertyStats = [
     { label: "Total Area", value: "5.0", unit: "Acres" },
-    { label: "Development", value: "2.5", unit: "Acres" },
-    { label: "Greenery", value: "2.5", unit: "Acres" },
+    { label: "Development", value: "2.5 acres - flat land", unit: "" },
+    { label: "Greenery", value: "2.5 acres - greeneries", unit: "" },
     { label: "ROI Potential", value: "20%", unit: "Annual" }
   ];
 
