@@ -10,7 +10,7 @@ const Features = () => {
   const properties = [
     {
       id: 1,
-      title: "22.20 G. Acres - Premium Estate",
+      title: "22.20 Acres - Premium Estate",
       description: "Your gateway to endless opportunities with profitable coffee plantation income from Day One!",
       size: "22.20 Guntha Acres",
       frontage: "750 ft National Highway Frontage",
@@ -34,9 +34,9 @@ const Features = () => {
     },
     {
       id: 2,
-      title: "5 Acres - Investment Paradise",
+      title: "5.06 Acres - Investment Paradise",
       description: "Same exceptional location and connectivity with all the benefits of the premium estate.",
-      size: "5 Acres",
+      size: "5.06 Acres",
       frontage: "Highway Access",
       features: [
         "Profitable Coffee Plantation potential",
